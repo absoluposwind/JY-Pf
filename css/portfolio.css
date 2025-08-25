@@ -540,6 +540,10 @@ body {
     }
   }
 
+.about-me .about_tit{
+    line-height: 39px;
+}
+
 .about-me p {
     font-family: 'SUIT-Medium';
     font-size: 25px;
@@ -574,23 +578,27 @@ body {
 .about-me ul>li>ul>li:nth-child(2){
     width: 100%;
     height: 50px;
-    line-height: 50px;
+    line-height: 90px;
 }
 
 .about-me ul>li>ul>li>a {
     font-size: 25px;
     color: #fff;
     opacity: 0;
+    word-break: keep-all;
 }
 
 .about-me ul>li>ul>li>a>img {
     border-radius: 10px;
-    width: 100px;
+    width: 160px;
+    height: 160px;
     opacity: 0;
 }
 
+
 .about-me ul>li>ul>li>a>p {
-    font-size: 18px;
+    font-size: 17px;
+    margin-top: 20px;
 }
 
 /* REDESIGN(WORKS) */
@@ -724,8 +732,8 @@ body {
 }
 
 .works-item ul li {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     background-color: #fff;
     border-radius: 50%;
     float: left;
@@ -737,21 +745,21 @@ body {
     cursor: pointer;
 }
 
-.works-item ul li:nth-child(3){
+/* .works-item ul li:nth-child(3){
     background-color: #000;
-}
+} */
 
-.works-item ul li:nth-child(3) img{
+/* .works-item ul li:nth-child(3) img{
     height: 30px;
     margin: 0 auto;
     position: relative;
     top: 30px;
     padding-bottom: 30px;
-}
+} */
 
 .works-item ul li img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     margin: 0 auto;
     position: relative;
     top: 20px; 
@@ -759,11 +767,23 @@ body {
 }
 
 .works-item ul li p {
-    margin-top: 40px;
+    margin-top: 45px;
     color: #fff;
     text-align: center;
     font-size: 14px;
+    word-break: keep-all;
+    line-height: 22px;
+    width: 100px;
 }
+
+.works-item ul li > a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 /* etc WORKS */
 .etc-wrap {
